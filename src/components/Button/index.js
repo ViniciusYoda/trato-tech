@@ -1,8 +1,9 @@
-.button {
-    background-color: #041833;
-    border-radius: 36px;
-    color: white;
-    cursor: pointer;
-    font-size: 24px;
-    padding: 20px 50px;
-  }
+import styles from './Button.module.scss';
+
+export default function Button({ children, type, onClick }) {
+  return (
+    <button className={styles.button} type={type} onClick={onClick}>
+      {children}
+    </button>
+  )
+}
