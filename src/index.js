@@ -6,7 +6,7 @@ import store from './store';
 import { Provider } from 'react-redux';
 import { createStandaloneToast } from '@chakra-ui/toast';
 
-const { ToastContainer } = createStandaloneToast();
+const { ToastContainer, toast } = createStandaloneToast();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
